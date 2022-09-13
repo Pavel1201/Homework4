@@ -1,10 +1,10 @@
 ﻿
-Console.WriteLine("Введите массив из 8 чисел");
+Console.WriteLine("Среднее арифметическое 8 случайных чисел: ");
 int[] array = new int[8];
 
 for (int i = 0; i < 8; i++)
 {
-    array[i] = int.Parse(Console.ReadLine()!);
+    array[i] = new Random().Next(1,100);
 }
 
 double arithmeticMean(int[] array1)
@@ -19,6 +19,6 @@ double arithmeticMean(int[] array1)
     return Arithmet;
 }
 
-Console.WriteLine(arithmeticMean(array));
+Console.Write(arithmeticMean(array));
 
 
